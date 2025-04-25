@@ -20,7 +20,7 @@
 
   [![go](https://goreportcard.com/badge/github.com/FloatTech/ZeroBot-Plugin?style=flat-square&logo=go)](https://goreportcard.com/badge/github.com/FloatTech/ZeroBot-Plugin)
   [![onebot](https://img.shields.io/badge/onebot-v11-black?style=flat-square&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAMAAADxPgR5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAxQTFRF////29vbr6+vAAAAk1hCcwAAAAR0Uk5T////AEAqqfQAAAKcSURBVHja7NrbctswDATQXfD//zlpO7FlmwAWIOnOtNaTM5JwDMa8E+PNFz7g3waJ24fviyDPgfhz8fHP39cBcBL9KoJbQUxjA2iYqHL3FAnvzhL4GtVNUcoSZe6eSHizBcK5LL7dBr2AUZlev1ARRHCljzRALIEog6H3U6bCIyqIZdAT0eBuJYaGiJaHSjmkYIZd+qSGWAQnIaz2OArVnX6vrItQvbhZJtVGB5qX9wKqCMkb9W7aexfCO/rwQRBzsDIsYx4AOz0nhAtWu7bqkEQBO0Pr+Ftjt5fFCUEbm0Sbgdu8WSgJ5NgH2iu46R/o1UcBXJsFusWF/QUaz3RwJMEgngfaGGdSxJkE/Yg4lOBryBiMwvAhZrVMUUvwqU7F05b5WLaUIN4M4hRocQQRnEedgsn7TZB3UCpRrIJwQfqvGwsg18EnI2uSVNC8t+0QmMXogvbPg/xk+Mnw/6kW/rraUlvqgmFreAA09xW5t0AFlHrQZ3CsgvZm0FbHNKyBmheBKIF2cCA8A600aHPmFtRB1XvMsJAiza7LpPog0UJwccKdzw8rdf8MyN2ePYF896LC5hTzdZqxb6VNXInaupARLDNBWgI8spq4T0Qb5H4vWfPmHo8OyB1ito+AysNNz0oglj1U955sjUN9d41LnrX2D/u7eRwxyOaOpfyevCWbTgDEoilsOnu7zsKhjRCsnD/QzhdkYLBLXjiK4f3UWmcx2M7PO21CKVTH84638NTplt6JIQH0ZwCNuiWAfvuLhdrcOYPVO9eW3A67l7hZtgaY9GZo9AFc6cryjoeFBIWeU+npnk/nLE0OxCHL1eQsc1IciehjpJv5mqCsjeopaH6r15/MrxNnVhu7tmcslay2gO2Z1QfcfX0JMACG41/u0RrI9QAAAABJRU5ErkJggg==)](https://t.me/zerobotplugin)
-  [![zerobot](https://img.shields.io/badge/zerobot-v1.7.4-black?style=flat-square&logo=go)](https://github.com/wdvxdr1123/ZeroBot)
+  [![zerobot](https://img.shields.io/badge/zerobot-v1.8.0-black?style=flat-square&logo=go)](https://github.com/wdvxdr1123/ZeroBot)
 
 
   
@@ -402,6 +402,18 @@ print("run[CQ:image,file="+j["img"]+"]")
 
 </details>
 <details>
+  <summary>AnimeTrace 动画/Galgame识别</summary>
+
+  `import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/animetrace"`
+
+  基于[AnimeTrace](https://ai.animedb.cn/)API  的识图搜索插件
+  
+  - [x] Gal识图 | Gal识图 [模型名]
+
+  - [x] 动漫识图 | 动漫识图 2 | 动漫识图 [模型名]
+
+</details>
+<details>
   <summary>触发者撤回时也自动撤回</summary>
 
   `import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/autowithdraw"`
@@ -666,6 +678,16 @@ print("run[CQ:image,file="+j["img"]+"]")
   `import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/emojimix"`
 
   - [x] [emoji][emoji]
+
+</details>
+<details>
+  <summary>颜文字抽象转写</summary>
+
+  `import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/emozi"`
+
+  - [x] 抽象转写[文段]
+  - [x] 抽象还原[文段]
+  - [x] 抽象登录[用户名]
 
 </details>
 <details>
@@ -941,12 +963,26 @@ print("run[CQ:image,file="+j["img"]+"]")
 
 </details>
 <details>
-  <summary>日韩 VITS 模型拟声</summary>
+  <summary>Minecraft服务器监控&订阅</summary>
 
-  `import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/moegoe"`
+`import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/minecraftobserver"`
 
-  - [x] 让[派蒙|空|荧|阿贝多|枫原万叶|温迪|八重神子|纳西妲|钟离|诺艾尔|凝光|托马|北斗|莫娜|荒泷一斗|提纳里|芭芭拉|艾尔海森|雷电将军|赛诺|琴|班尼特|五郎|神里绫华|迪希雅|夜兰|辛焱|安柏|宵宫|云堇|妮露|烟绯|鹿野院平藏|凯亚|达达利亚|迪卢克|可莉|早柚|香菱|重云|刻晴|久岐忍|珊瑚宫心海|迪奥娜|戴因斯雷布|魈|神里绫人|丽莎|优菈|凯瑟琳|雷泽|菲谢尔|九条裟罗|甘雨|行秋|胡桃|迪娜泽黛|柯莱|申鹤|砂糖|萍姥姥|奥兹|罗莎莉亚|式大将|哲平|坎蒂丝|托克|留云借风真君|昆钧|塞琉斯|多莉|大肉丸|莱依拉|散兵|拉赫曼|杜拉夫|阿守|玛乔丽|纳比尔|海芭夏|九条镰治|阿娜耶|阿晃|阿扎尔|七七|博士|白术|埃洛伊|大慈树王|女士|丽塔|失落迷迭|缭乱星棘|伊甸|伏特加女孩|狂热蓝调|莉莉娅|萝莎莉娅|八重樱|八重霞|卡莲|第六夜想曲|卡萝尔|姬子|极地战刃|布洛妮娅|次生银翼|理之律者|迷城骇兔|希儿|魇夜星渊|黑希儿|帕朵菲莉丝|天元骑英|幽兰黛尔|德丽莎|月下初拥|朔夜观星|暮光骑士|明日香|李素裳|格蕾修|梅比乌斯|渡鸦|人之律者|爱莉希雅|爱衣|天穹游侠|琪亚娜|空之律者|薪炎之律者|云墨丹心|符华|识之律者|维尔薇|芽衣|雷之律者|阿波尼亚]说(中文)
+- [x] mc服务器状态 [服务器IP/URI]
+- [x] mc服务器添加订阅 [服务器IP/URI]
+- [x] mc服务器取消订阅 [服务器IP/URI]
+- [x] mc服务器订阅拉取 （需要插件定时任务配合使用，全局只需要设置一个）
+  - 使用job插件设置定时, 对话例子如下:：
+    - 记录在"@every 1m"触发的指令
+    - （机器人回答：您的下一条指令将被记录，在@@every 1m时触发）
+    - mc服务器订阅拉取
+</details>
+<details>
+  <summary>Movies猫眼电影查询</summary>
 
+`import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/movies"`
+
+- [x] 今日电影
+- [x] 预售电影
 </details>
 <details>
   <summary>摸鱼</summary>
@@ -1035,9 +1071,21 @@ print("run[CQ:image,file="+j["img"]+"]")
 
 - [x] 打胶
 
+- [x] 使用[道具名称]打胶
+
 - [x] jj[@xxx]
 
+- [x] 使用[道具名称]jj[@xxx]
+
 - [x] 赎牛牛
+
+- [x] 牛牛拍卖行
+
+- [x] 出售牛牛
+
+- [x] 牛牛商店
+
+- [x] 牛牛背包
 
 - [x] 注册牛牛
 
@@ -1303,14 +1351,6 @@ print("run[CQ:image,file="+j["img"]+"]")
 
 </details>
 <details>
-  <summary>vits猫雷</summary>
-
-  `import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/vitsnyaru"`
-
-  - [x] 让猫雷说[xxxx]
-
-</details>
-<details>
   <summary>vtb语录</summary>
 
   `import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/vtb_quotation"`
@@ -1532,6 +1572,25 @@ print("run[CQ:image,file="+j["img"]+"]")
 ### *低优先级*
 
 <details>
+  <summary>OpenAI聊天</summary>
+
+  `import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/aichat"`
+
+  - [x] 设置AI聊天触发概率10
+  - [x] 设置AI聊天温度80
+  - [x] 设置AI聊天接口类型[OpenAI|OLLaMA|GenAI]
+  - [x] 设置AI聊天(不)支持系统提示词
+  - [x] 设置AI聊天接口地址https://xxx
+  - [x] 设置AI聊天密钥xxx
+  - [x] 设置AI聊天模型名xxx
+  - [x] 查看AI聊天系统提示词
+  - [x] 重置AI聊天系统提示词
+  - [x] 设置AI聊天系统提示词xxx
+  - [x] 设置AI聊天分隔符`</think>`(留空则清除)
+  - [x] 设置AI聊天(不)响应AT
+
+</details>
+<details>
   <summary>骂人</summary>
 
   `import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/curse"`
@@ -1542,19 +1601,7 @@ print("run[CQ:image,file="+j["img"]+"]")
 
 </details>
 <details>
-  <summary>人工智能回复</summary>
-
-  `import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/aireply"`
-
-  - [x] @Bot 任意文本(任意一句话回复)
-
-  - [x] 设置文字回复模式[婧枫|沫沫|青云客|小爱|ChatGPT]
-
-  - [x] 设置 ChatGPT api key xxx
-
-</details>
-<details>
-  <summary>词典匹配回复</summary>
+  <summary>词典匹配回复, 仅@触发</summary>
 
   `import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/thesaurus"`
 
